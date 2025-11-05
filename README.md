@@ -1,2 +1,106 @@
-# FUTURE_ML_02
-Developed a Customer Churn Prediction System that identifies customers who are likely to stop using a service.
+🧠 FUTURE_ML_02 – Churn Prediction System
+🚀 Future Interns Machine Learning Internship Task 2
+📄 About the Project
+
+This project is part of the Future Interns Machine Learning Internship (Task 2).
+The goal is to develop a Customer Churn Prediction System that identifies customers who are likely to stop using a service.
+Customer retention is a major business priority, and churn prediction helps companies take proactive actions to retain users.
+
+🎯 Objective
+
+To build a machine learning model that predicts the probability of customer churn and visualize the key churn factors through a data-driven dashboard using Matplotlib.
+
+🧰 Tools & Technologies Used
+
+🐍 Python – Core programming language
+
+🧮 Pandas & NumPy – Data analysis and preprocessing
+
+⚙️ Scikit-learn – Model training and evaluation
+
+🌲 XGBoost & RandomForest – Advanced classification models
+
+📊 Matplotlib – Visualization and dashboard creation
+
+📁 Dataset
+
+Telco Customer Churn Dataset – (Kaggle / Provided by Future Interns)
+This dataset contains customer demographics, account details, and service usage patterns used to predict churn behavior.
+
+🧹 Steps Performed
+
+Data Exploration & Cleaning
+
+Handled missing values in TotalCharges
+
+Encoded target variable Churn (Yes = 1, No = 0)
+
+Dropped unnecessary columns like customerID
+
+Feature Engineering
+
+Separated numerical and categorical columns
+
+Applied scaling and one-hot encoding using ColumnTransformer
+
+Model Training
+
+Trained Logistic Regression, Random Forest, and XGBoost models
+
+Model Evaluation
+
+Compared accuracy, precision, recall, and ROC-AUC metrics
+
+Generated confusion matrix and ROC curves
+
+Visualization
+
+Created a 4-in-1 Matplotlib dashboard showing:
+
+Churn distribution
+
+Top feature importances
+
+ROC curve
+
+Confusion matrix
+
+Prediction
+
+Calculated churn probabilities for each customer record
+
+📈 Results & Insights
+
+The XGBoost model achieved the best overall performance.
+
+Key churn drivers included:
+
+Contract type
+
+Tenure length
+
+Monthly charges
+
+Internet service category
+
+The Matplotlib dashboard summarizes all major metrics and visuals.
+
+🖼️ Dashboard Preview
+
+Churn_Dashboard_Matplotlib.png
+
+This dashboard provides a business-ready visualization summarizing churn insights and model results.
+
+🧩 Deliverables
+File	Description
+FUTURE_ML_02_ChurnPrediction.ipynb	Complete code notebook
+Churn_Dashboard_Matplotlib.png	Final dashboard visualization
+README.md	Project documentation
+👨‍💻 Intern
+
+Vignesh L V
+Machine Learning Intern – Future Interns
+
+📍 Task 2 – Churn Prediction System
+📧 contact@futureinterns.com
+ | 🌐 Future Interns
