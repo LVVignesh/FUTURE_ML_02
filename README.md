@@ -115,6 +115,14 @@ python app.py
 
 For Hugging Face Spaces, upload all files to your Space (Gradio SDK) and it will generate a live URL automatically.
 
+## 🌐 Live Demo
+
+Try the **Customer Churn Prediction System** live online on Hugging Face Spaces.  
+Enter customer details and see the predicted churn probability instantly!
+
+[Launch the App](https://huggingface.co/spaces/lvvignesh2122/churn-prediction-app)
+
+
 👨‍💻 Intern
 
 Vignesh L V
