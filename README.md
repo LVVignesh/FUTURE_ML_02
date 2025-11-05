@@ -15,7 +15,7 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 - Build a machine learning model that predicts the probability of customer churn.  
 - Visualize key churn factors through a **data-driven dashboard** using Matplotlib.  
-- Provide an **interactive interface** using **Streamlit** for live predictions (Step 12).
+- Provide an **interactive interface** using **Gradio** for live predictions (Step 12).
 
 ---
 
@@ -26,7 +26,7 @@ Customer retention is a major business priority, and churn prediction helps comp
 - ⚙️ Scikit-learn – Model training and evaluation  
 - 🌲 XGBoost & RandomForest – Advanced classification models  
 - 📊 Matplotlib – Visualization and dashboard creation  
-- 🌐 Streamlit – Interactive web app for live predictions  
+- 🌐 Gradio – Interactive web app for live predictions  
 
 ---
 
@@ -64,8 +64,8 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 6. **Prediction & Interactive App**  
    - Calculated **churn probabilities** for each customer record  
-   - Built a **Streamlit app** (`app.py`) to allow:  
-     - Input of customer details via sidebar  
+   - Built a **Gradio app** (`app.py`) to allow:  
+     - Input of customer details  
      - Viewing predicted churn probability  
      - Displaying model insights interactively  
 
@@ -94,21 +94,26 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 | File | Description |
 |------|-------------|
-| FUTURE_ML_02_ChurnPrediction.ipynb | Complete code notebook with Step 12 (interactive app included) |
+| FUTURE_ML_02_ChurnPrediction.ipynb | Complete code notebook with Step 12 (interactive Gradio app included) |
 | Churn_Dashboard_Matplotlib.png | Final dashboard visualization |
 | churn_model.pkl | Trained model file |
-| app.py | Interactive Streamlit app for live predictions |
+| app.py | Interactive Gradio app for live predictions |
 | README.md | Project documentation |
 
 ---
 
-## ⚡ How to Run the Streamlit App
+## ⚡ How to Run the Gradio App
 
 1. Ensure `churn_model.pkl` and `app.py` are in the same folder.  
 2. Install dependencies:
 
 ```bash
-pip install streamlit pandas scikit-learn xgboost
+pip install gradio pandas numpy scikit-learn xgboost matplotlib
+
+Run the app locally:
+python app.py
+
+For Hugging Face Spaces, upload all files to your Space (Gradio SDK) and it will generate a live URL automatically.
 
 👨‍💻 Intern
 
