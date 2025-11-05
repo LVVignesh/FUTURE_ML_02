@@ -1,9 +1,9 @@
-🧠 FUTURE_ML_02 – Churn Prediction System  
-🚀 Future Interns Machine Learning Internship Task 2  
+# 🧠 FUTURE_ML_02 – Churn Prediction System  
+## 🚀 Future Interns Machine Learning Internship Task 2
 
 ---
 
-📄 **About the Project**  
+## 📄 About the Project  
 
 This project is part of the Future Interns Machine Learning Internship (Task 2).  
 The goal is to develop a **Customer Churn Prediction System** that identifies customers who are likely to stop using a service.  
@@ -11,33 +11,33 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 ---
 
-🎯 **Objective**  
+## 🎯 Objective  
 
 - Build a machine learning model that predicts the probability of customer churn.  
 - Visualize key churn factors through a **data-driven dashboard** using Matplotlib.  
-- (Optional) Provide an **interactive interface** using **Streamlit or Gradio** for live predictions.
+- Provide an **interactive interface** using **Streamlit** for live predictions (Step 12).
 
 ---
 
-🧰 **Tools & Technologies Used**  
+## 🧰 Tools & Technologies Used  
 
 - 🐍 Python – Core programming language  
 - 🧮 Pandas & NumPy – Data analysis and preprocessing  
 - ⚙️ Scikit-learn – Model training and evaluation  
 - 🌲 XGBoost & RandomForest – Advanced classification models  
 - 📊 Matplotlib – Visualization and dashboard creation  
-- 🌐 Streamlit / Gradio – Interactive web app for live predictions  
+- 🌐 Streamlit – Interactive web app for live predictions  
 
 ---
 
-📁 **Dataset**  
+## 📁 Dataset  
 
 - **Telco Customer Churn Dataset** – (Kaggle / Provided by Future Interns)  
 - Contains customer demographics, account details, and service usage patterns to predict churn behavior.
 
 ---
 
-🧹 **Steps Performed**  
+## 🧹 Steps Performed  
 
 1. **Data Exploration & Cleaning**  
    - Handled missing values in `TotalCharges`  
@@ -64,14 +64,14 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 6. **Prediction & Interactive App**  
    - Calculated **churn probabilities** for each customer record  
-   - Built a **Streamlit/Gradio app** (`app.py` or notebook cell) to allow:  
-     - Uploading customer data  
+   - Built a **Streamlit app** (`app.py`) to allow:  
+     - Input of customer details via sidebar  
      - Viewing predicted churn probability  
-     - Displaying feature importance and model insights interactively  
+     - Displaying model insights interactively  
 
 ---
 
-📈 **Results & Insights**  
+## 📈 Results & Insights  
 
 - The **XGBoost model** achieved the best overall performance.  
 - Key churn drivers included:  
@@ -83,29 +83,37 @@ Customer retention is a major business priority, and churn prediction helps comp
 
 ---
 
-🖼️ **Dashboard Preview**  
+## 🖼️ Dashboard Preview  
 
 - `Churn_Dashboard_Matplotlib.png`  
 - Provides a business-ready visualization summarizing churn insights and model results.  
 
 ---
 
-🧩 **Deliverables**  
+## 🧩 Deliverables  
 
 | File | Description |
 |------|-------------|
 | FUTURE_ML_02_ChurnPrediction.ipynb | Complete code notebook with Step 12 (interactive app included) |
 | Churn_Dashboard_Matplotlib.png | Final dashboard visualization |
 | churn_model.pkl | Trained model file |
+| app.py | Interactive Streamlit app for live predictions |
 | README.md | Project documentation |
-| app.py *(optional if separated from notebook)* | Interactive Streamlit/Gradio app for live predictions |
 
 ---
 
-👨‍💻 **Intern**  
+## ⚡ How to Run the Streamlit App
 
-Vignesh L V  
-Machine Learning Intern – Future Interns  
+1. Ensure `churn_model.pkl` and `app.py` are in the same folder.  
+2. Install dependencies:
 
-📍 Task 2 – Churn Prediction System  
-📧 contact@futureinterns.com | 🌐 [Future Interns](https://futureinterns.com)
+```bash
+pip install streamlit pandas scikit-learn xgboost
+
+👨‍💻 Intern
+
+Vignesh L V
+Machine Learning Intern – Future Interns
+
+📍 Task 2 – Churn Prediction System
+📧 contact@futureinterns.com | 🌐 Future Interns
