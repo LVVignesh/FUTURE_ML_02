@@ -1,106 +1,111 @@
-🧠 FUTURE_ML_02 – Churn Prediction System
-🚀 Future Interns Machine Learning Internship Task 2
-📄 About the Project
+🧠 FUTURE_ML_02 – Churn Prediction System  
+🚀 Future Interns Machine Learning Internship Task 2  
 
-This project is part of the Future Interns Machine Learning Internship (Task 2).
-The goal is to develop a Customer Churn Prediction System that identifies customers who are likely to stop using a service.
+---
+
+📄 **About the Project**  
+
+This project is part of the Future Interns Machine Learning Internship (Task 2).  
+The goal is to develop a **Customer Churn Prediction System** that identifies customers who are likely to stop using a service.  
 Customer retention is a major business priority, and churn prediction helps companies take proactive actions to retain users.
 
-🎯 Objective
+---
 
-To build a machine learning model that predicts the probability of customer churn and visualize the key churn factors through a data-driven dashboard using Matplotlib.
+🎯 **Objective**  
 
-🧰 Tools & Technologies Used
+- Build a machine learning model that predicts the probability of customer churn.  
+- Visualize key churn factors through a **data-driven dashboard** using Matplotlib.  
+- (Optional) Provide an **interactive interface** using **Streamlit or Gradio** for live predictions.
 
-🐍 Python – Core programming language
+---
 
-🧮 Pandas & NumPy – Data analysis and preprocessing
+🧰 **Tools & Technologies Used**  
 
-⚙️ Scikit-learn – Model training and evaluation
+- 🐍 Python – Core programming language  
+- 🧮 Pandas & NumPy – Data analysis and preprocessing  
+- ⚙️ Scikit-learn – Model training and evaluation  
+- 🌲 XGBoost & RandomForest – Advanced classification models  
+- 📊 Matplotlib – Visualization and dashboard creation  
+- 🌐 Streamlit / Gradio – Interactive web app for live predictions  
 
-🌲 XGBoost & RandomForest – Advanced classification models
+---
 
-📊 Matplotlib – Visualization and dashboard creation
+📁 **Dataset**  
 
-📁 Dataset
+- **Telco Customer Churn Dataset** – (Kaggle / Provided by Future Interns)  
+- Contains customer demographics, account details, and service usage patterns to predict churn behavior.
 
-Telco Customer Churn Dataset – (Kaggle / Provided by Future Interns)
-This dataset contains customer demographics, account details, and service usage patterns used to predict churn behavior.
+---
 
-🧹 Steps Performed
+🧹 **Steps Performed**  
 
-Data Exploration & Cleaning
+1. **Data Exploration & Cleaning**  
+   - Handled missing values in `TotalCharges`  
+   - Encoded target variable `Churn` (Yes = 1, No = 0)  
+   - Dropped unnecessary columns like `customerID`  
 
-Handled missing values in TotalCharges
+2. **Feature Engineering**  
+   - Separated numerical and categorical columns  
+   - Applied scaling and one-hot encoding using `ColumnTransformer`  
 
-Encoded target variable Churn (Yes = 1, No = 0)
+3. **Model Training**  
+   - Trained **Logistic Regression**, **Random Forest**, and **XGBoost** models  
 
-Dropped unnecessary columns like customerID
+4. **Model Evaluation**  
+   - Compared **accuracy, precision, recall, F1-score, and ROC-AUC metrics**  
+   - Generated **confusion matrix** and ROC curves  
 
-Feature Engineering
+5. **Visualization**  
+   - Created a **4-in-1 Matplotlib dashboard** showing:  
+     - Churn distribution  
+     - Top feature importances  
+     - ROC curve  
+     - Confusion matrix  
 
-Separated numerical and categorical columns
+6. **Prediction & Interactive App**  
+   - Calculated **churn probabilities** for each customer record  
+   - Built a **Streamlit/Gradio app** (`app.py` or notebook cell) to allow:  
+     - Uploading customer data  
+     - Viewing predicted churn probability  
+     - Displaying feature importance and model insights interactively  
 
-Applied scaling and one-hot encoding using ColumnTransformer
+---
 
-Model Training
+📈 **Results & Insights**  
 
-Trained Logistic Regression, Random Forest, and XGBoost models
+- The **XGBoost model** achieved the best overall performance.  
+- Key churn drivers included:  
+  - Contract type  
+  - Tenure length  
+  - Monthly charges  
+  - Internet service category  
+- The Matplotlib dashboard summarizes all major metrics and visuals.  
 
-Model Evaluation
+---
 
-Compared accuracy, precision, recall, and ROC-AUC metrics
+🖼️ **Dashboard Preview**  
 
-Generated confusion matrix and ROC curves
+- `Churn_Dashboard_Matplotlib.png`  
+- Provides a business-ready visualization summarizing churn insights and model results.  
 
-Visualization
+---
 
-Created a 4-in-1 Matplotlib dashboard showing:
+🧩 **Deliverables**  
 
-Churn distribution
+| File | Description |
+|------|-------------|
+| FUTURE_ML_02_ChurnPrediction.ipynb | Complete code notebook with Step 12 (interactive app included) |
+| Churn_Dashboard_Matplotlib.png | Final dashboard visualization |
+| churn_model.pkl | Trained model file |
+| README.md | Project documentation |
+| app.py *(optional if separated from notebook)* | Interactive Streamlit/Gradio app for live predictions |
 
-Top feature importances
+---
 
-ROC curve
+👨‍💻 **Intern**  
 
-Confusion matrix
+Vignesh L V  
+Machine Learning Intern – Future Interns  
 
-Prediction
-
-Calculated churn probabilities for each customer record
-
-📈 Results & Insights
-
-The XGBoost model achieved the best overall performance.
-
-Key churn drivers included:
-
-Contract type
-
-Tenure length
-
-Monthly charges
-
-Internet service category
-
-The Matplotlib dashboard summarizes all major metrics and visuals.
-
-🖼️ Dashboard Preview
-
-Churn_Dashboard_Matplotlib.png
-
-This dashboard provides a business-ready visualization summarizing churn insights and model results.
-
-🧩 Deliverables
-File	Description
-FUTURE_ML_02_ChurnPrediction.ipynb	Complete code notebook
-Churn_Dashboard_Matplotlib.png	Final dashboard visualization
-README.md	Project documentation
-👨‍💻 Intern
-
-Vignesh L V
-Machine Learning Intern – Future Interns
-
-📍 Task 2 – Churn Prediction System
-📧 contact@futureinterns.com
- | 🌐 Future Interns
+📍 Task 2 – Churn Prediction System  
+📧 contact@futureinterns.com | 🌐 [Future Interns](https://futureinterns.com)
